@@ -19,6 +19,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: ls && npm install
-      - run: npm ci
-      - run: npm run test:ci
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn test:ci
