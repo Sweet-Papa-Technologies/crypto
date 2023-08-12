@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Unit Tests | @fofo/crypto
 run-name: ${{ github.actor }} initated a pull request 🚀
 on: [pull_request]
 jobs:
@@ -19,5 +19,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - run: npm i
       - run: npm run test
