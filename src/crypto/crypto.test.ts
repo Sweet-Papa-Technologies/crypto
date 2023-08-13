@@ -18,13 +18,13 @@ describe('Kyber Handshaker', () => {
     const handshaker = new kyberHandshaker();
     const handshaker2 = new kyberHandshaker()
 
-    const { serverPublicKey, serverPrivateKey } = handshaker.generateServerKeys();
-    const handShakeData = handshaker2.generateClientKeyHandshake(serverPublicKey);
+    const { PublicKey, PrivateKey } = handshaker.generateKeys();
+    const handShakeData = handshaker2.generateKeyHandshake(PublicKey);
     const c = handShakeData.c
-    const ss1 = handShakeData.ss1 as Buffer
-    const serverSharedSecret = handshaker.serverConsumeClientKeyHandshake(c, serverPrivateKey);
+    const clientSharedSecret = handShakeData.ss1 as Buffer
+    const serverSharedSecret = handshaker.ConsumeHandshake(c, PrivateKey);
 
-    expect(ss1).toEqual(serverSharedSecret);
+    expect(clientSharedSecret).toEqual(serverSharedSecret);
 
     if (serverSharedSecret) {
       serverSharedSecretShared = serverSharedSecret
