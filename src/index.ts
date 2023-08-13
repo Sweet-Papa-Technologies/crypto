@@ -1,5 +1,3 @@
-import fofoCrypto from "./crypto/crypto";
+import {encryptString, decryptString, kyberHandshaker, generatePassphrase } from "./crypto/crypto";
 
-export default {
-  ...fofoCrypto
-}
+export default {encryptString, decryptString, generatePassphrase, kyberHandshaker }

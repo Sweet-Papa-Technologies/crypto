@@ -1,6 +1,6 @@
 {
   "name": "@fofonet/crypto",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "An easy PQC (Post Quantum Computing) library for encrypting/decrypting data and sharing keys using the Kyber algorithm and AES-256.",
   "main": "dist/index.js",
   "scripts": {
