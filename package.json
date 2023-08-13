@@ -1,7 +1,7 @@
 {
   "name": "@fofonet/crypto",
-  "version": "1.0.0-beta.2",
-  "description": "Repository for the server side FoFo Network Admin SDK.",
+  "version": "1.0.0-beta.3",
+  "description": "An easy PQC (Post Quantum Computing) library for encrypting/decrypting data and sharing keys using the Kyber algorithm and AES-256.",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
@@ -15,11 +15,18 @@
   },
   "keywords": [
     "crypto",
+    "cryptography",
+    "encrypt",
+    "decrypt",
+    "easy",
+    "typescript",  
     "web3",
     "kyber",
     "encryption",
     "pqc",
     "quantum",
+    "crystal",
+    "krystal",
     "post-quantum",
     "browser"
   ],
