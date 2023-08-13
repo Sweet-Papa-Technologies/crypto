@@ -12,7 +12,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sweet-Papa-Technologies/crypto.git",
+    "url": "git+https://github.com/Sweet-Papa-Technologies/crypto.git"
+  },
   "keywords": ["crypto", "web3", "kyber", "encryption", "pqc", "quantum", "post-quantum"],
   "author": "Forreste Terry",
   "license": "MIT",
@@ -26,5 +27,5 @@
   "dependencies": {
     "crystals-kyber": "^5.1.0"
   }
-}
+
 }
