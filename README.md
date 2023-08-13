@@ -52,7 +52,7 @@ const { PublicKey, PrivateKey } = handshaker.generateKeys();
 import { kyberHandshaker } from '@fofonet/crypto';
 
 const handshaker2 = new kyberHandshaker()
-const handShakeData = handshaker2.generateKeyHandshake(serverPublicKey);
+const handShakeData = handshaker2.generateKeyHandshake(PublicKey); // Pass the PublicKey generated in Step 1
 const SharedSecret = handShakeData.ss1 as Buffer;
 
 returnToClient(handShakeData.c);
